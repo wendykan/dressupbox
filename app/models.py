@@ -16,6 +16,22 @@ class User(models.Model):
     def __unicode__(self):
         return self.name
 
+u = User(name = "Sharon Wong",
+        email = "sharon.wong@gmail.com",
+        latitude = "37",
+        longitude = "30")
+
+v = User(name = "Whit Cohen",
+        email = "we.cohen@gmail.com",
+        latitude = "37",
+        longitude = "31")
+
+v = User(name = "Michelle Sun",
+        email = "michesun@gmail.com",
+        latitude = "38",
+        longitude = "30")
+
+
 class Dress(models.Model):
     """Write a docstring for the Dress class."""
     owner = models.ForeignKey(User)
@@ -30,6 +46,15 @@ class Dress(models.Model):
 
     def __unicode__(self):
         return self.brand + self.size
+
+d = Dress(owner = u, 
+        brand = ,
+        size = ,
+        details = ,
+        color = ,
+        image = ,
+        style = ,
+        occasion = )
 
 class Transaction(models.Model):
     """Write a docstring for the Transaction class."""

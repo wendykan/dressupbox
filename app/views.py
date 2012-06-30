@@ -3,8 +3,11 @@ from django.http import HttpResponse
 # To implement more polls, see Part 3 of the official Django tutorial:
 # https://docs.djangoproject.com/en/dev/intro/tutorial03/
 
+def index(request):
+    return HttpResponse("Hello, world. You're at the app index.")
+
 def default(request):
-    return HttpResponse("This is the default placeholder page.")
+    return HttpResponse("Hello, world. You're at the app index.")
 
 def login(request):
     return HttpResponse("This is the login page")
