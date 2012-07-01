@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Your Friends' Closet on Dress Up Box</title>
+<link rel="stylesheet" type="text/css" href="dress.css">
+</head>
+<body>
+<div class="All">
+<div class="Header">
+	<a href="/closet" class="Hitem">my closet</a>
+	<a href="/friends" class="Hitem">my friends' closets</a>
+	<a href="/inbox" class="Hitem">inbox</a>
+	<a href="/need" class="Hitem">i need a dress</a>
+
+	<a href="/account" class="Acct">user account</a>
+	<a href="/logout" class="Acct">logout</a>
+</div>
+<div class="Center">
+	<div>
+		<p class="Title"> Your Friends' Closets</p> 
+		<p class="SubTitle"> To see more dresses, simply refresh your friends' closets!</p>
+	</div>
+	<div class="ImageBubble">
+		<img src="http://2.bp.blogspot.com/-4RTs5SlVEHg/T-LCEAEve3I/AAAAAAAAARU/QLbfQbyWslk/s1600/Dress.jpg">
+		<img src="IMAGE GOES HERE!!!!!">
+		<img src="IMAGE GOES HERE!!!!!">
+		<img src="IMAGE GOES HERE!!!!!">
+		<img src="IMAGE GOES HERE!!!!!">
+		<img src="IMAGE GOES HERE!!!!!">
+		<img src="IMAGE GOES HERE!!!!!">
+		<img src="IMAGE GOES HERE!!!!!">
+		<img src="IMAGE GOES HERE!!!!!">		
+</div>
+<br/>
+<br/>
+</div>
+</body>
+</html>
