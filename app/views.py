@@ -10,11 +10,11 @@ from django.http import HttpResponse
 def search(request):
     return render_to_response('frontend/need.html')
 
-def results(request):
+def results(request): # (request, dress_list)?
     # Even though we claim this is a search response, this is actually all dresses.
     # We know that. We just haven't implemented search yet.
-    all_dresses = Dress.objects.all()
-    return render_to_response('frontend/results.html', {'all_dresses': all_dresses})
+    dress_list = Dress.objects.all()
+    return render_to_response('frontend/results.html', {'dress_list': dress_list})
 
 # Static pages
 

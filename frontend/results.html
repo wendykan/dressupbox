@@ -2,6 +2,7 @@
 <head>
     <title>Find Your Dress on Dress Up Box</title>
     <link rel="stylesheet" type="text/css" href="/imgs/dress.css">
+    <link href='http://fonts.googleapis.com/css?family=Pontano+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
@@ -20,15 +21,23 @@
 	    <p style="text-align: left">Your dress results</p>
 	</div>
 
-    <!--
-    make this!
-    http://aceinfowayindia.com/blog/2010/02/how-to-create-simple-css-image-rollover-effect/
-    -->
-
     <div class="Cen">
-	    <img class="Bubble" height="150px" width="150px" src="/imgs/red-dress.png" />
-	    <img class="Bubble" height="150px" width="150px" src="/imgs/red-dress.png" />
-	    <img class="Bubble" height="150px" width="150px" src="/imgs/red-dress.png" />
+	    {% for dress in dress_list %}
+
+	    <div class="ResultBox">
+	        <a href="/{{dress.image.url}}" title="{{ dress }}"><img
+            src = {{dress.image.url}} class="Bubble" height="150px" width="150px"
+
+title="Owner: {{ dress.owner }}
+
+Brand: {{ dress.brand }}
+Size: {{ dress.size }}
+Style: {{ dress.style }}
+Details: {{ dress.details }}"
+            /></a>
+	    </div>
+
+        {% endfor %}
 	</div>
 
     <div class="Cen">
@@ -48,18 +57,6 @@
 </body>
 </html>
 
-
-
-
-
-
-
-
-<table>
-
-<!-- make this into a grid instead of a list -->
-<!-- make each one link to its results page -->
-<!-- try to make it pretty -->
 
 <!--
 <table>
