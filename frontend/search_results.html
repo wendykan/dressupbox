@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>Find Your Dress on Dress Up Box</title>
+    <link rel="stylesheet" type="text/css" href="/imgs/dress.css">
+    <link href='http://fonts.googleapis.com/css?family=Pontano+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div class="All">
+    <div class="Header">
+    	<a href="/closet" class="Hitem">my closet</a>
+    	<a href="/friends" class="Hitem">my friends' closets</a>
+    	<a href="/inbox" class="Hitem">inbox</a>
+    	<a href="/search" class="Hitem">i need a dress</a>
+
+    	<a href="/account" class="Acct">user account</a>
+    	<a href="/logout" class="Acct">logout</a>
+    </div>
+
+<div class="Center">
+	<div class="Title">
+	    <p style="text-align: left">Your dress results</p>
+	</div>
+
+    <div class="Cen">
+	    {% for dress in nearby_dresses %}
+
+	    <div class="ResultBox">
+	        <a href="/dress/{{dress.id}}" title="{{ dress }}"><img
+            src = {{dress.image.url}} class="Bubble" height="150px" width="150px"
+
+title="Owner: {{ dress.owner }}
+
+Brand: {{ dress.brand }}
+Size: {{ dress.size }}
+Style: {{ dress.style }}
+Details: {{ dress.details }}"/></a>
+	    </div>
+
+        {% endfor %}
+	</div>
+</div>
+</div>
+</body>
+</html>

@@ -10,9 +10,8 @@ Getting the code
 
 To get a local copy of the current code, clone it using git:
 
-$ git clone git://github.com/wendykan/dressupbox.git
-
-$ cd dressupbox
+    git clone git://github.com/wendykan/dressupbox.git
+    cd dressupbox
 
 Troubleshooting
 ===============

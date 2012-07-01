@@ -1,7 +1,7 @@
 <html>
 <head>
-<title>Find Your Dress on Dress Up Box</title>
-<link rel="stylesheet" type="text/css" href="dress.css">
+    <title>Find Your Dress on Dress Up Box</title>
+    <link rel="stylesheet" type="text/css" href="/imgs/dress.css">
 </head>
 <body>
 <div class="All">
@@ -9,16 +9,21 @@
 	<a href="/closet" class="Hitem">my closet</a>
 	<a href="/friends" class="Hitem">my friends' closets</a>
 	<a href="/inbox" class="Hitem">inbox</a>
-	<a href="/need" class="Hitem">i need a dress</a>
+	<a href="/search" class="Hitem">i need a dress</a>
 
 	<a href="/account" class="Acct">user account</a>
 	<a href="/logout" class="Acct">logout</a>
 </div>
 <div class="Center">
-	<form name="search" action="DON'T FORGET TO ADD!!!!!!!!!!!" method="get">
+    <div class="Title">
+	    <p style="text-align: left">I need a dress!</p>
+	</div>
+
+	<form name="search" action="results/" method="get">
+	
 	<div class="Cen">
 		<p class="Bubble">Near where do you need a dress?</p>
-		<input type="text" value="enter location here" name="location" class="WideIn"/>
+		<input type="text" placeholder="enter location here" name="location" class="WideIn"/>
 		<p class="Bubble">How far would you go to get it?</p>
 		<select name="distance" class="SmallIn">
 			<option value="1">1 mile</option>
