@@ -16,7 +16,7 @@ body {
 	float: right;
 }
 .Header * {
-	width: 140px;
+	width: 150px;
 	border: 1px solid black;
 	text-align: center;
 	padding: 5px 0px;
@@ -51,8 +51,19 @@ body {
 	border:4px solid #83165c;
 	border-radius:10px;
 	-moz-border-radius:10px;
-	width: 250px;
-	height: 20px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 5px 0px;
+	margin: 10px 25px;
+}
+.Bubble:hover {
+    opacity:.60;
+    filter:alpha(opacity=60);
+
+	color:#666666;
+	border:4px solid #83165c;
+	border-radius:10px;
+	-moz-border-radius:10px;
 	text-align: center;
 	vertical-align: middle;
 	padding: 5px 0px;
@@ -71,7 +82,7 @@ body {
 .HorBar * {
 	float: left;
 }
-.HorBar p { 
+.HorBar p {
 	font-size: 28px;
 	color:#666666;
 	width: 500px;
@@ -88,12 +99,27 @@ body {
 	margin: 40px 0px;
 }
 .BigB p {
-	
+
+}
+.Register {
+	width: 200px;
+	height: 50px;
+	text-align: center;
+	padding: 10px 10px;
+	font-size: 24px;
+	color: #83165c;
+	margin: 40px 40px;
+	background-color: #cccccc;
+	border:2px solid #83165c;
 }
 .Title p {
 	text-align: center;
 	color: #83165c;
-	font-size: 32px;
+	font-size: 40px;
+}
+.SmallTitle {
+	font-size: 20px;
+	font-weight:bold;
 }
 .Half {
 	width:460px;

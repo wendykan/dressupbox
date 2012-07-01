@@ -6,6 +6,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^app/$', 'app.views.default'),
+    url(r'^home/$', 'app.views.home'),
     url(r'^login/$', 'app.views.login'),
     url(r'^signup/$', 'app.views.signup'),
     url(r'^map/$', 'app.views.map'),
@@ -17,7 +18,7 @@ urlpatterns = patterns('',
     # url(r'^app/(?P<poll_id>\d+)/results/$', 'app.views.results'),
     # url(r'^app/(?P<poll_id>\d+)/vote/$', 'app.views.vote'),
     url(r'^admin/', include(admin.site.urls)),
-    
+
 )
 
 if settings.DEBUG:

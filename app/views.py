@@ -21,6 +21,9 @@ def results(request):
 def default(request):
     return HttpResponse("Hello, world. You're at the app index.")
 
+def home(request):
+    return render_to_response('frontend/home.html')
+
 def login(request):
     return HttpResponse("This is the login page")
 
