@@ -48,7 +48,7 @@ USE_TZ = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-MEDIA_ROOT = ''
+MEDIA_ROOT = '/Users/sharon/Dropbox/Code/dressupbox/imgs'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -106,9 +106,10 @@ ROOT_URLCONF = 'dressupbox.urls'
 WSGI_APPLICATION = 'dressupbox.wsgi.application'
 
 TEMPLATE_DIRS = (
-    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
+    # Unfortunately, we're using absolute paths, not relative paths.
+    # That means that if you're running this app locally, you need to edit this.
     # Always use forward slashes, even on Windows.
-    # Don't forget to use absolute paths, not relative paths.
+    "/Users/sharon/Dropbox/Code/dressupbox"
 )
 
 INSTALLED_APPS = (
