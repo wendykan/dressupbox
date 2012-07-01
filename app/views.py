@@ -1,5 +1,6 @@
 from django.shortcuts import render_to_response
 from app.models import User, Dress, Transaction
+from django.http import HttpResponse
 
 # To implement more views, see Part 3 of the official Django tutorial:
 # https://docs.djangoproject.com/en/dev/intro/tutorial03/
@@ -29,8 +30,10 @@ def signup(request):
 def map(request):
     return HttpResponse("This is the map page")
 
-def dress(request):
-    return HttpResponse("This is the map page")
+def dress(request, dress_id):
+#    return HttpResponse("You're looking at the dress id %s." % dress_id)
+    dress = Dress.objects.get(id=dress_id)
+    return render_to_response('frontend/detail.html', {'dress':dress})
 
 def moreinfo(request):
     return HttpResponse("This is the more info page")
