@@ -1,8 +1,10 @@
 <html>
 <head>
 <title>Find Your Dress on Dress Up Box</title>
+<link rel="stylesheet" type="text/css" href="dress.css">
 </head>
 <body>
+<div class="All">
 <div class="Header">
 	<a href="/closet" class="Hitem">my closet</a>
 	<a href="/friends" class="Hitem">my friends' closets</a>
@@ -13,12 +15,12 @@
 	<a href="/logout" class="Acct">logout</a>
 </div>
 <div class="Center">
-	<form name="search" action="" method="get"> #Don't forget to add action here!
-	<div class="CenL">
+	<form name="search" action="DON'T FORGET TO ADD!!!!!!!!!!!" method="get">
+	<div class="Cen">
 		<p class="Bubble">Near where do you need a dress?</p>
-		<input type="text" value="Location here" name="location" />
+		<input type="text" value="enter location here" name="location" class="WideIn"/>
 		<p class="Bubble">How far would you go to get it?</p>
-		<select name="distance">
+		<select name="distance" class="SmallIn">
 			<option value="1">1 mile</option>
 			<option value="5">5 miles</option>
 			<option value="10">10 miles</option>
@@ -27,9 +29,9 @@
 			<option value="50">50 miles</option>
 		</select>
 	</div>
-	<div class="CenM">
+	<div class="Cen">
 		<p class="Bubble">What's the occasion?</p>
-		<select name="occasion">
+		<select name="occasion" class="SmallIn">
 			<option value="cocktail">cocktail</option>
 			<option value="buscas">business casual</option>
 			<option value="wedding">wedding</option>
@@ -43,19 +45,8 @@
 			<option value="family">family gathering</option>
 			<option value="all">all</option>
 		</select>
-	</div>
-	<div class="CenR">
-		<p class="Bubble">What style are you looking for?</p>
-		<input type="checkbox" name="style" value="strapless" />strapless
-		<input type="checkbox" name="style" value="cap" />cap sleeve
-		<input type="checkbox" name="style" value="mini" />mini
-		<input type="checkbox" name="style" value="floor" />floor length
-		<input type="checkbox" name="style" value="sleeveless" />sleeveless
-		<input type="checkbox" name="style" value="short" />short sleeve
-		<input type="checkbox" name="style" value="knee" />knee length
-		<input type="checkbox" name="style" value="maxi" />maxi
 		<p class="Bubble">What size do you need?</p>
-		<select name="size">
+		<select name="size" class="SmallIn">
 			<option value="xxs">xxs (00)</option>
 			<option value="xs">xs (0)</option>
 			<option value="s">s (2-4)</option>
@@ -64,11 +55,29 @@
 			<option value="xl">xl (14-16)</option>
 		</select>
 	</div>
+	<div class="Cen">
+		<p class="Bubble">What style are you looking for?</p>
+		<div class="SmallChecks">
+			<div>
+				<p><input type="checkbox" name="style" value="strapless" />strapless</p>
+				<p><input type="checkbox" name="style" value="cap" />cap sleeve</p>
+				<p><input type="checkbox" name="style" value="mini" />mini</p>
+				<p><input type="checkbox" name="style" value="floor" />floor length</p>
+			</div>
+			<div>
+				<p><input type="checkbox" name="style" value="sleeveless" />sleeveless</p>
+				<p><input type="checkbox" name="style" value="short" />short sleeve</p>
+				<p><input type="checkbox" name="style" value="knee" />knee length</p>
+				<p><input type="checkbox" name="style" value="maxi" />maxi</p>
+			</div>
+		</div>
+	</div>
 </div>
 <div class="HorBar">
 	<p>Narrow your search by selecting occasion, styles, and size.</p>
-	<input type="submit" value="find my dress!" />
+	<input type="submit" value="find my dress!" class="BigB" />
 	</form>
+</div>
 </div>
 </body>
 </html>

@@ -87,3 +87,15 @@ body {
 	color: #83165c;
 	margin: 40px 0px;
 }
+.BigB p {
+	
+}
+.Title p {
+	text-align: center;
+	color: #83165c;
+	font-size: 32px;
+}
+.Half {
+	width:460px;
+	float:left;
+	padding:10px;
