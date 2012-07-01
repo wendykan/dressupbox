@@ -18,7 +18,7 @@ def results(request):
 # Static pages
 
 def default(request):
-    return HttpResponse("This is the default placeholder page.")
+    return HttpResponse("Hello, world. You're at the app index.")
 
 def login(request):
     return HttpResponse("This is the login page")
