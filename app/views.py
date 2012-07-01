@@ -1,7 +1,21 @@
-from django.http import HttpResponse
+from django.shortcuts import render_to_response
+from app.models import User, Dress, Transaction
 
-# To implement more polls, see Part 3 of the official Django tutorial:
+# To implement more views, see Part 3 of the official Django tutorial:
 # https://docs.djangoproject.com/en/dev/intro/tutorial03/
+
+# Dynamic pages
+
+def search(request):
+    return render_to_response('frontend/need.html')
+
+def results(request):
+    # Even though we claim this is a search response, this is actually all dresses.
+    # We know that. We just haven't implemented search yet.
+    all_dresses = Dress.objects.all()
+    return render_to_response('frontend/results.html', {'all_dresses': all_dresses})
+
+# Static pages
 
 def default(request):
     return HttpResponse("This is the default placeholder page.")
