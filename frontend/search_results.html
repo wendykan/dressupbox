@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Find Your Dress on Dress Up Box</title>
+    <link rel="stylesheet" type="text/css" href="/imgs/dress.css">
+</head>
+<body>
+
+<div class="All">
+<div class="Header">
+	<a href="/closet" class="Hitem">my closet</a>
+	<a href="/friends" class="Hitem">my friends' closets</a>
+	<a href="/inbox" class="Hitem">inbox</a>
+	<a href="/search" class="Hitem">i need a dress</a>
+
+	<a href="/account" class="Acct">user account</a>
+	<a href="/logout" class="Acct">logout</a>
+</div>
+<div>
+{{location_text}}
+
+{{nearby_dresses}}
+</div>
+</body>
+</html>
+<!-- make this into a grid instead of a list -->
+<!-- make each one link to its results page -->
+<!-- try to make it pretty -->
+
+<!--
+<table>
+    <tr>
+        <td>Owner</td>
+        <td>Brand</td>
+        <td>Size</td>
+        <td>Details</td>
+        <td>Color</td>
+        <td>Image</td>
+        <td>Style</td>
+        <td>Occasion</td>
+    </tr>
+
+{% for dress in all_dresses %}
+    <tr>
+        <td>{{ dress.owner }}</td>
+        <td>{{ dress.brand }}</td>
+        <td>{{ dress.size }}</td>
+        <td>{{ dress.details }}</td>
+        <td>{{ dress.color }}</td>
+        <td><A HREF = {{dress.image.url}}><IMG SRC = {{dress.image.url}} /> </a></td>
+        <td>{{ dress.style }}</td>
+        <td>{{ dress.occasion }}</td>
+    </tr>
+{% endfor %}
+</table>
+-->
