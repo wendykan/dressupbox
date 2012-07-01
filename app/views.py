@@ -33,7 +33,7 @@ def map(request):
 def dress(request, dress_id):
 #    return HttpResponse("You're looking at the dress id %s." % dress_id)
     dress = Dress.objects.get(id=dress_id)
-    return render_to_response('frontend/detail.html', {'dress':dress})
+    return render_to_response('frontend/dress.html', {'dress':dress})
 
 def moreinfo(request):
     return HttpResponse("This is the more info page")
