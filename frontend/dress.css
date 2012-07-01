@@ -87,15 +87,78 @@ body {
 	color: #83165c;
 	margin: 40px 0px;
 }
-.BigB p {
-	
+.BigBP {
+	width: 300px;
+	height: 30px;
+	text-align: center;
+	padding: 5px;
+	font-size: 24px;
+	color: #83165c;
+	margin: 40px 60px;
+	border: 1px solid black;
+	background: #F4F4F4;
 }
-.Title p {
+.Title {
 	text-align: center;
 	color: #83165c;
 	font-size: 32px;
 }
+.SubTitle {
+	text-align: center;
+	color: #666666;
+	font-size: 26px;
+}	
 .Half {
 	width:460px;
 	float:left;
 	padding:10px;
+}
+.BigBubble {
+	font-size: 28px;
+	color:#666666;
+	border:4px solid #83165c;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	width: 380px;
+	height: 32px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 5px 0px;
+	margin: 10px 25px;
+}
+.ImageBubble img {
+	border:5px solid #83165c;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 5px;
+	margin: 20px;
+}
+.ImageBubble {
+	padding: 0px 85px;
+}
+.BigImageBubble {
+	padding: 0px;
+}
+.BigImageBubble img {
+	border:5px solid #83165c;
+	width: 400px;
+	height: 400px;
+	text-align: center;`
+	vertical-align: middle;
+	padding: 5px;
+	margin: 20px;
+}
+img.FBook {
+	border:5px solid #83165c;
+	width: 350px;
+	height: 30px;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0px 45px;
+}
+.PWithBub {
+	width: 390px;
+	margin: 0px 25px;
+}
